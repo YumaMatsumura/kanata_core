@@ -48,4 +48,5 @@ jobs:
         uses: ros-tooling/action-ros-ci@v0.4
         with:
           target-ros2-distro: jazzy
+          vcs-repo-file-url: ${{ github.workspace }}/.github/ci.repos
           import-token: ${{ secrets.GITHUB_TOKEN }}
